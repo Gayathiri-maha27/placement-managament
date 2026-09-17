@@ -1,0 +1,185 @@
+{
+  "info": {
+    "name": "Placement Management System API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/health"
+        }
+      }
+    },
+    {
+      "name": "POST students",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Arun Kumar\",\n  \"email\": \"arun@gmail.com\",\n  \"phone\": \"9876543210\",\n  \"department\": \"CSE\",\n  \"graduationYear\": 2026\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/students"
+        }
+      }
+    },
+    {
+      "name": "GET students",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/students"
+        }
+      }
+    },
+    {
+      "name": "POST certificates",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"studentName\": \"Arun Kumar\",\n  \"certificateName\": \"Java Backend Training\",\n  \"issueDate\": \"2026-09-03\",\n  \"certificateNumber\": \"CERT-1001\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/certificates"
+        }
+      }
+    },
+    {
+      "name": "GET certificates",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/certificates"
+        }
+      }
+    },
+    {
+      "name": "POST placements",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"studentName\": \"Arun Kumar\",\n  \"companyName\": \"ABC Technologies\",\n  \"jobRole\": \"Java Developer\",\n  \"status\": \"SELECTED\",\n  \"packageLpa\": 6.5\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/placements"
+        }
+      }
+    },
+    {
+      "name": "GET placements",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/placements"
+        }
+      }
+    },
+    {
+      "name": "POST colleges",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"ABC Engineering College\",\n  \"location\": \"Chennai\",\n  \"contactEmail\": \"placement@abc.edu\",\n  \"contactPhone\": \"9876500000\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/colleges"
+        }
+      }
+    },
+    {
+      "name": "GET colleges",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/colleges"
+        }
+      }
+    },
+    {
+      "name": "POST admins",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Admin One\",\n  \"email\": \"admin@placement.com\",\n  \"role\": \"ADMIN\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/admins"
+        }
+      }
+    },
+    {
+      "name": "GET admins",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/admins"
+        }
+      }
+    },
+    {
+      "name": "POST users",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Student User\",\n  \"email\": \"student@placement.com\",\n  \"role\": \"STUDENT\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/users"
+        }
+      }
+    },
+    {
+      "name": "GET users",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/users"
+        }
+      }
+    }
+  ]
+}
